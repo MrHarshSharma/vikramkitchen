@@ -16,7 +16,7 @@ export default function Hero() {
             backgroundImage: "url('/hero.jpg')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
       </div>
 
       {/* Floating decorative elements */}
@@ -42,7 +42,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-tight"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight"
           style={{ fontFamily: "var(--font-playfair)" }}
         >
           The Vikram&apos;s
@@ -54,7 +54,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg sm:text-xl text-white/80 mb-4 max-w-2xl mx-auto leading-relaxed"
+          className="text-base sm:text-lg text-white/80 mb-10 max-w-2xl mx-auto leading-relaxed"
         >
           Where every dish tells a story of tradition, every flavour sparks trust,
           and every bite is a celebration of taste.
@@ -64,7 +64,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="flex flex-col sm:flex-row gap-4 justify-center"
+          className="flex flex-col sm:flex-row gap-4 justify-center mb-4"
         >
           <a
             href="#menu"

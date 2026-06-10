@@ -96,13 +96,6 @@ const menuItems = [
     image: "https://images.unsplash.com/photo-1603133872878-684f208fb84b?q=80&w=2025",
   },
   {
-    name: "Spring Rolls",
-    category: "Chinese",
-    price: "₹90",
-    description: "Crispy rolls stuffed with seasoned vegetables, served with chilli sauce",
-    image: "https://images.unsplash.com/photo-1548507200-47d6ab4af754?q=80&w=2070",
-  },
-  {
     name: "Pasta Arrabiata",
     category: "Continental",
     price: "₹150",
@@ -123,13 +116,6 @@ const menuItems = [
     description: "Authentic Indian spiced tea brewed with fresh ginger and cardamom",
     tag: "Must Try",
     image: "https://images.unsplash.com/photo-1564890369478-c89ca6d9cde9?q=80&w=2070",
-  },
-  {
-    name: "Fresh Lime Soda",
-    category: "Beverages",
-    price: "₹40",
-    description: "Refreshing lime soda — sweet, salty, or mixed to your preference",
-    image: "https://images.unsplash.com/photo-1513558161293-cdaf765ed514?q=80&w=2070",
   },
 ];
 

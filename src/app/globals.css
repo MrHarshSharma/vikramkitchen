@@ -61,7 +61,7 @@ html {
 
 /* Diamond pattern background */
 .pattern-bg-diamond {
-  background-image: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236b8f5e' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M15 8l7 7-7 7-7-7z'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%236b8f5e' fill-opacity='0.04' fill-rule='evenodd'%3E%3Cpath d='M24 18l6 6-6 6-6-6z'/%3E%3C/g%3E%3C/svg%3E");
 }
 
 /* Floating animation */
