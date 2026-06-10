@@ -4,22 +4,39 @@ import { motion } from "framer-motion";
 
 const features = [
   {
-    icon: "🌿",
+    icon: (
+      <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.3}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9-4.03-9-9-9zm0 0v9l6.36 3.64" />
+        <path strokeLinecap="round" strokeLinejoin="round" d="M8 12s1.5-2 4-2 4 2 4 2M9 16c.84.63 1.87 1 3 1s2.16-.37 3-1M12 3a2.5 2.5 0 00-1.5 4.5M12 3a2.5 2.5 0 011.5 4.5" />
+      </svg>
+    ),
     title: "100% Pure Veg",
     description: "Every dish is prepared with fresh, pure vegetarian ingredients — no compromises.",
   },
   {
-    icon: "👨‍🍳",
+    icon: (
+      <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.3}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
+      </svg>
+    ),
     title: "Expert Chefs",
     description: "Our skilled chefs bring decades of culinary expertise to every plate we serve.",
   },
   {
-    icon: "🍛",
+    icon: (
+      <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.3}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
     title: "Multi-Cuisine",
     description: "From South Indian dosas to North Indian curries, Chinese and Continental delights.",
   },
   {
-    icon: "💰",
+    icon: (
+      <svg className="w-8 h-8 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.3}>
+        <path strokeLinecap="round" strokeLinejoin="round" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
     title: "Affordable",
     description: "Premium quality dining experience at pocket-friendly prices for everyone.",
   },
@@ -138,7 +155,7 @@ export default function About() {
               whileHover={{ y: -8, scale: 1.02 }}
               className="bg-cream rounded-2xl p-6 text-center hover:shadow-xl transition-shadow duration-300 border border-primary/5"
             >
-              <div className="text-4xl mb-4">{feature.icon}</div>
+              <div className="flex justify-center mb-4">{feature.icon}</div>
               <h4
                 className="text-lg font-bold text-dark mb-2"
                 style={{ fontFamily: "var(--font-playfair)" }}

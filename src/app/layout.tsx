@@ -21,6 +21,10 @@ export const metadata: Metadata = {
     "The Vikram's Kitchen - Pure Veg Multi-Cuisine Restaurant in Lakadganj, Nagpur. Serving authentic North Indian, South Indian, Chinese & Continental cuisine. Tradition | Taste | Trust.",
   keywords:
     "vikrams kitchen, pure veg restaurant, nagpur, lakadganj, south indian, north indian, vegetarian, dosa, idli",
+  icons: {
+    icon: "/logo.jpg",
+    apple: "/logo.jpg",
+  },
   openGraph: {
     title: "The Vikram's Kitchen | Pure Veg Restaurant",
     description: "Tradition | Taste | Trust - Pure Veg Multi-Cuisine Restaurant in Nagpur",

@@ -42,11 +42,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center">
-                <span className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-playfair)" }}>
-                  V
-                </span>
-              </div>
+              <img
+                src="/logo.jpg"
+                alt="The Vikram's Kitchen Logo"
+                className="w-10 h-10 rounded-full object-cover"
+              />
               <div>
                 <div className="font-bold text-lg" style={{ fontFamily: "var(--font-playfair)" }}>
                   The Vikram&apos;s Kitchen

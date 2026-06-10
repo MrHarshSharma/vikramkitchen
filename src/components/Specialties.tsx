@@ -40,7 +40,7 @@ const specialties = [
 
 export default function Specialties() {
   return (
-    <section id="specialties" className="py-20 sm:py-28 bg-white">
+    <section id="specialties" className="py-20 sm:py-28 bg-white pattern-bg-diamond">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div

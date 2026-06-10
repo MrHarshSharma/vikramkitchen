@@ -41,28 +41,19 @@ export default function Navbar() {
             className="flex items-center gap-3"
             whileHover={{ scale: 1.05 }}
           >
-            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-primary flex items-center justify-center">
-              <span className="text-white font-bold text-lg sm:text-xl" style={{ fontFamily: "var(--font-playfair)" }}>
-                V
-              </span>
-            </div>
-            <div className="flex flex-col">
-              <span
-                className={`text-lg sm:text-xl font-bold transition-colors duration-300 ${
-                  isScrolled ? "text-primary" : "text-white"
-                }`}
-                style={{ fontFamily: "var(--font-playfair)" }}
-              >
-                The Vikram&apos;s Kitchen
-              </span>
-              <span
-                className={`text-[10px] tracking-[0.2em] uppercase transition-colors duration-300 ${
-                  isScrolled ? "text-secondary" : "text-secondary"
-                }`}
-              >
-                Tradition &bull; Taste &bull; Trust
-              </span>
-            </div>
+            <img
+              src="/logo.jpg"
+              alt="The Vikram's Kitchen Logo"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full object-cover"
+            />
+            <span
+              className={`text-lg sm:text-xl font-bold transition-colors duration-300 ${
+                isScrolled ? "text-primary" : "text-white"
+              }`}
+              style={{ fontFamily: "var(--font-playfair)" }}
+            >
+              The Vikram&apos;s Kitchen
+            </span>
           </motion.a>
 
           {/* Desktop Nav */}

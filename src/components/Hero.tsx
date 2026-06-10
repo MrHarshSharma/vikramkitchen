@@ -38,17 +38,6 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-6"
-        >
-          <span className="inline-block px-6 py-2 border border-secondary/60 rounded-full text-secondary text-sm tracking-[0.3em] uppercase">
-            Pure Vegetarian
-          </span>
-        </motion.div>
-
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
@@ -70,19 +59,6 @@ export default function Hero() {
           Where every dish tells a story of tradition, every flavour sparks trust,
           and every bite is a celebration of taste.
         </motion.p>
-
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="flex items-center justify-center gap-4 text-secondary text-sm tracking-[0.25em] uppercase mb-10"
-        >
-          <span>Tradition</span>
-          <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-          <span>Taste</span>
-          <span className="w-1.5 h-1.5 rounded-full bg-secondary" />
-          <span>Trust</span>
-        </motion.div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}
