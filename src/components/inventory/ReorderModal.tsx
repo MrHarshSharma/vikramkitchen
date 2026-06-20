@@ -87,7 +87,7 @@ export function ReorderModal({
               {list.map((it) => (
                 <div
                   key={it.id}
-                  className="flex items-center justify-between gap-3 rounded-lg bg-cream/40 px-3 py-2"
+                  className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3 rounded-lg bg-cream/40 px-3 py-2.5"
                 >
                   <div className="min-w-0">
                     <p className="text-sm font-semibold text-dark truncate">{it.name}</p>
@@ -96,16 +96,16 @@ export function ReorderModal({
                       {formatQty(it.reorderLevel)}
                     </p>
                   </div>
-                  <div className="flex items-center gap-1.5 shrink-0">
+                  <div className="flex items-center gap-2 shrink-0">
                     <input
                       type="number"
                       min={0}
                       step="any"
                       value={qty[it.id] ?? ""}
                       onChange={(e) => setQty((q) => ({ ...q, [it.id]: e.target.value }))}
-                      className={`${inputClass} w-24 text-right`}
+                      className={`${inputClass} flex-1 sm:flex-none sm:w-24 text-right`}
                     />
-                    <span className="text-xs text-dark/50 w-10">{it.unit}</span>
+                    <span className="text-xs text-dark/50 shrink-0 w-6 text-left">{it.unit}</span>
                   </div>
                 </div>
               ))}
@@ -128,7 +128,7 @@ export function ReorderModal({
           disabled={selectedCount === 0}
           className="flex-1 inline-flex items-center justify-center gap-2 py-2.5 rounded-lg bg-[#25D366] hover:bg-[#1ebe5d] text-white font-semibold transition-colors shadow-lg shadow-[#25D366]/25 disabled:opacity-50 disabled:cursor-not-allowed disabled:shadow-none"
         >
-          Send on WhatsApp{selectedCount > 0 ? ` (${selectedCount})` : ""}
+          Send {selectedCount > 0 ? ` (${selectedCount})` : ""}
         </button>
       </div>
     </Modal>
